@@ -1,7 +1,34 @@
 ecs-deploy
 =================
 
-This script uses the Task Definition and Service entities in Amazon's ECS to instigate an automatic blue/green deployment.
+Orgsync
+-----
+This fork uses ENV interpolated via docker-compose for the AWS keys and logins.  Make sure your ENV vars are set accordingly.
+
+ECS Clusters you can deploy to:
+
+```
+am1-ecs-dev01
+am1-ecs-prd01
+```
+
+If you are unsure of the correct service-name, ask Ops. Deploys to services that do not exist on a given cluster will fail.
+
+To "restart" a service, simply deploy again using the same image:tag.
+
+Dev Deployment Example:
+
+```
+dc run ecsdeploy -c am1-ecs-dev01 -n otis-dev -i quay.io/orgsync/otis:0.1.1
+```
+
+```
+
+Prod Deployment Example:
+
+```
+dc run ecsdeploy -c am1-ecs-prd01 -n otis -i quay.io/orgsync/otis:0.1.1
+```
 
 Usage
 -----
