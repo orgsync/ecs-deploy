@@ -1,6 +1,6 @@
 {
-    "name": "silinternational/ecs-deploy",
-    "description": "Simple shell script for initiated blue-green deployments on Amazon Elastic Container Service (ECS)",
+    "name": "orgsync/ecs-deploy",
+    "description": "Shell script for deployments on Amazon ECS (fork of silinternational/ecs-deploy)",
     "type": "library",
     "keywords": [
         "aws",
@@ -10,7 +10,7 @@
         "elastic container service",
         "amazon web services"
     ],
-    "homepage": "https://github.com/silinternational/ecs-deploy",
+    "homepage": "https://github.com/orgsync/ecs-deploy",
     "license": "MIT",
     "bin": [
         "ecs-deploy"
