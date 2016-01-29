@@ -22,8 +22,6 @@ Dev Deployment Example:
 dc run ecsdeploy -c am1-ecs-dev01 -n otis-dev -i quay.io/orgsync/otis:0.1.1
 ```
 
-```
-
 Prod Deployment Example:
 
 ```
