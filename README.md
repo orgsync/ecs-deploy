@@ -44,7 +44,7 @@ Usage
                                           silintl/mariadb:latest, private.registry.com:8000/repo/image:tag
 
     Optional arguments:
-        -t | --timeout          Default is 90s. Script monitors ECS Service for new task definition to be running.
+        -t | --timeout          Default is 300s. Script monitors ECS Service for new task definition to be running.
         -e | --tag-env-var      Get image tag name from environment variable. If provided this will override value specified in image name argument.
         -v | --verbose          Verbose output
 
